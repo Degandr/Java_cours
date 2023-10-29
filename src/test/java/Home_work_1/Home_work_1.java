@@ -1,3 +1,5 @@
+package Home_work_1;
+
 public class Home_work_1 {
     public static void first (){
         for (int i = 1; i < 5 ; i++) {
