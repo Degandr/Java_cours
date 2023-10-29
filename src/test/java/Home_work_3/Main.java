@@ -1,3 +1,5 @@
+package Home_work_3;
+
 public class Main {
     public static void main(String[] args) {
         Task_1 vasa = new Task_1("Vasa", "Pupkin", "QA", 1000);

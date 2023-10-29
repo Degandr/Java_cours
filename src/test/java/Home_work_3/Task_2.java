@@ -1,3 +1,5 @@
+package Home_work_3;
+
 public class Task_2 {
     int speed;
     double timeAcceleration;
