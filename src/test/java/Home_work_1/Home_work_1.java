@@ -1,8 +1,8 @@
 package Home_work_1;
 
 public class Home_work_1 {
-    public static void first (){
-        for (int i = 1; i < 5 ; i++) {
+    public static void first() {
+        for (int i = 1; i < 5; i++) {
             if (i == 1) {
                 System.out.println("one");
             } else if (i == 2) {
@@ -15,8 +15,8 @@ public class Home_work_1 {
         }
     }
 
-    public static void second (){
-        for (int i = 1; i < 5 ; i++) {
+    public static void second() {
+        for (int i = 1; i < 5; i++) {
             switch (i) {
                 case 1 -> System.out.println("one");
                 case 2 -> System.out.println("two");
@@ -27,7 +27,7 @@ public class Home_work_1 {
         }
     }
 
-    public static void third (){
+    public static void third() {
         int i = 10;
         int result = 0;
         while ((10 <= i) && (i < 55)) {
