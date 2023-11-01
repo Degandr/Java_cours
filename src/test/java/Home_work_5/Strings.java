@@ -4,7 +4,7 @@ public class Strings {
     public static final String str = "I like Java!!!";
 
     public static void methods() {
-        System.out.println("The last character is - " + str.charAt(13));
+        System.out.println("The last character is - " + str.charAt(str.length()-1));
         System.out.println("Is the string contain 'Java' word? - " + str.contains("Java"));
         System.out.println("Replace all 'a' on 'o' - " + str.replace("a", "o"));
         System.out.println("String in uppercase - " + str.toUpperCase());
@@ -14,7 +14,8 @@ public class Strings {
 
     public static void format() {
         String sourceStr = "корж %s корж";
-        System.out.printf((sourceStr) + "%n", "крем");
+        String newStr = String.format(sourceStr, "крем");
+        System.out.println(newStr);
     }
 
 
