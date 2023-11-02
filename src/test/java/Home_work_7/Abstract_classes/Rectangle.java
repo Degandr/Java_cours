@@ -15,8 +15,8 @@ public class Rectangle extends Figure {
     }
 
     public static void main(String[] args) {
-        Rectangle rectangle = new Rectangle ();
-        rectangle.areaCalc(3,4);
-        rectangle.pyrimeterCalc(5,6);
+        Rectangle rectangle = new Rectangle();
+        rectangle.areaCalc(3, 4);
+        rectangle.pyrimeterCalc(5, 6);
     }
 }
