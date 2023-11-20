@@ -6,7 +6,7 @@ import java.util.Map;
 public class Hmap {
     public static Map<String, Integer> sets = new HashMap<>();
 
-    public static void Iterate() {
+    public static void iterate() {
         for (Map.Entry<String, Integer> item : sets.entrySet()) {
             System.out.printf("Key %s Value %d \n", item.getKey(), item.getValue());
         }
@@ -25,7 +25,7 @@ public class Hmap {
         sets.put("book_2", 2);
         sets.put("book_3", 3);
         sets.put("book_4", 4);
-        Iterate();
+        iterate();
         keySet();
         values();
     }
