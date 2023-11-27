@@ -1,0 +1,3 @@
+function showMessgae() {
+  alert('Thanks!')
+}
