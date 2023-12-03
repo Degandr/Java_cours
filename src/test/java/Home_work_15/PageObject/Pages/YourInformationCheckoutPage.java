@@ -1,4 +1,4 @@
-package Home_work_15.PageObject;
+package Home_work_15.PageObject.Pages;
 
 import com.codeborne.selenide.SelenideElement;
 
@@ -17,16 +17,19 @@ public class YourInformationCheckoutPage {
                 .shouldBe(visible)
                 .sendKeys(firstName);
     }
+
     public void fillLastName(String lastName) {
         lastNameInput
                 .shouldBe(visible)
                 .sendKeys(lastName);
     }
+
     public void fillPostalCode(String postalCode) {
         postalCodeInput
                 .shouldBe(visible)
                 .sendKeys(postalCode);
     }
+
     public void clickContinue() {
         continueButton
                 .shouldBe(enabled)

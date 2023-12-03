@@ -1,4 +1,4 @@
-package Home_work_15.PageObject;
+package Home_work_15.PageObject.Pages;
 
 import com.codeborne.selenide.SelenideElement;
 
@@ -14,9 +14,11 @@ public class CompleteCheckoutPage {
     public boolean checkGratefullText() {
         return gratefullText.isDisplayed();
     }
+
     public boolean checkCartBadgeIsNotVisible() {
         return cartBadge.is(not(visible));
     }
+
     public void clickBackHome() {
         backHomeButton
                 .shouldBe(enabled)

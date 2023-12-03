@@ -1,9 +1,11 @@
-package Home_work_15.Tests;
+package Home_work_15.Tests.Autotests;
 
-import Home_work_15.PageObject.LoginPage;
-import Home_work_15.PageObject.ProductsPage;
+import Home_work_15.PageObject.Pages.LoginPage;
+import Home_work_15.PageObject.Pages.ProductsPage;
 import Home_work_15.Steps.LoginSteps;
 import Home_work_15.Steps.ProductsSteps;
+import Home_work_15.Tests.BaseTest;
+import Home_work_15.Tests.Credentials;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -13,6 +15,7 @@ public class PriceSortingTest extends BaseTest {
     private ArrayList<String> arrayPriceCurrent;
     private ArrayList<String> arrayPriceLowToHigh;
     private ArrayList<String> arrayPriceHighToLow;
+
     @Test
     public void priceSortingPageObject() {
         LoginPage loginPage = new LoginPage();
@@ -32,6 +35,7 @@ public class PriceSortingTest extends BaseTest {
         arrayPriceHighToLow = productsPage.priceSequenceHighToLow();
         Assert.assertEquals(arrayPriceCurrent, arrayPriceHighToLow);
     }
+
     @Test
     public void priceSortingSteps() {
         LoginSteps loginSteps = new LoginSteps();

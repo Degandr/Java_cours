@@ -1,6 +1,6 @@
 package Home_work_15.Steps;
 
-import Home_work_15.PageObject.CompleteCheckoutPage;
+import Home_work_15.PageObject.Pages.CompleteCheckoutPage;
 
 public class CompleteCheckoutSteps {
 

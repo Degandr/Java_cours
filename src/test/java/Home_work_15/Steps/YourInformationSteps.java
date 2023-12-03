@@ -1,6 +1,6 @@
 package Home_work_15.Steps;
 
-import Home_work_15.PageObject.YourInformationCheckoutPage;
+import Home_work_15.PageObject.Pages.YourInformationCheckoutPage;
 
 public class YourInformationSteps {
     public void fillYourInformation(String firstName, String lastName, String postalCode) {

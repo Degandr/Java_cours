@@ -1,11 +1,13 @@
-package Home_work_15.Tests;
+package Home_work_15.Tests.Autotests;
 
-import Home_work_15.PageObject.CartPage;
-import Home_work_15.PageObject.LoginPage;
-import Home_work_15.PageObject.ProductsPage;
+import Home_work_15.PageObject.Pages.CartPage;
+import Home_work_15.PageObject.Pages.LoginPage;
+import Home_work_15.PageObject.Pages.ProductsPage;
 import Home_work_15.Steps.CartSteps;
 import Home_work_15.Steps.LoginSteps;
 import Home_work_15.Steps.ProductsSteps;
+import Home_work_15.Tests.BaseTest;
+import Home_work_15.Tests.Credentials;
 import org.testng.annotations.Test;
 
 public class RemoveBikeLightFromCartTest extends BaseTest {
@@ -28,6 +30,7 @@ public class RemoveBikeLightFromCartTest extends BaseTest {
         cartPage.checkCartBadgeIsNotVisible();
         cartPage.checkBikeLightTitleIsNotVisible();
     }
+
     @Test
     public void removeBikeLightFromCartSteps() {
         LoginSteps loginSteps = new LoginSteps();

@@ -1,4 +1,4 @@
-package Home_work_15.PageObject;
+package Home_work_15.PageObject.Pages;
 
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
@@ -55,19 +55,22 @@ public class ProductsPage {
 
     public ArrayList<String> priceSequenceCurrent() {
         ArrayList<String> arr = new ArrayList<>();
-        for(SelenideElement price : prices) {
+        for (SelenideElement price : prices) {
             arr.add(price.getText().substring(1));
         }
-       return arr;
+        return arr;
     }
+
     public void sortingDropdownOpening() {
         dropdownSorting
                 .shouldBe(visible)
                 .click();
     }
+
     public void lowToHighSortingSelection() {
         lowToHighSorting.click();
     }
+
     public ArrayList<String> priceSequenceLowToHigh() {
         ArrayList<String> arr = priceSequenceCurrent();
         arr.sort((price1, price2) -> {
@@ -77,9 +80,11 @@ public class ProductsPage {
         });
         return arr;
     }
+
     public void highToLowSortingSelection() {
         highToLowSorting.click();
     }
+
     public ArrayList<String> priceSequenceHighToLow() {
         ArrayList<String> arr = priceSequenceCurrent();
         arr.sort((price1, price2) -> {
@@ -89,11 +94,13 @@ public class ProductsPage {
         });
         return arr;
     }
+
     public void burgerMenuOpen() {
         burgerMenu
                 .shouldBe(enabled)
                 .click();
     }
+
     public void logoutButtonClick() {
         logoutButton
                 .shouldBe(enabled)

@@ -1,9 +1,11 @@
-package Home_work_15.Tests;
+package Home_work_15.Tests.Autotests;
 
-import Home_work_15.PageObject.LoginPage;
-import Home_work_15.PageObject.ProductsPage;
+import Home_work_15.PageObject.Pages.LoginPage;
+import Home_work_15.PageObject.Pages.ProductsPage;
 import Home_work_15.Steps.LoginSteps;
 import Home_work_15.Steps.ProductsSteps;
+import Home_work_15.Tests.BaseTest;
+import Home_work_15.Tests.Credentials;
 import org.testng.annotations.Test;
 
 public class LogoutTest extends BaseTest {
@@ -19,8 +21,9 @@ public class LogoutTest extends BaseTest {
         productsPage.logoutButtonClick();
         loginPage.checkBoxWithCredentials();
     }
+
     @Test
-    public void logoutSteps(){
+    public void logoutSteps() {
         LoginSteps loginSteps = new LoginSteps();
         loginSteps.login(Credentials.USER_LOGIN, Credentials.USER_PASSWORD);
         ProductsSteps productsSteps = new ProductsSteps();

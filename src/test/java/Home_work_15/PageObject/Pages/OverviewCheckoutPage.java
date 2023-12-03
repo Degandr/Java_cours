@@ -1,4 +1,4 @@
-package Home_work_15.PageObject;
+package Home_work_15.PageObject.Pages;
 
 import com.codeborne.selenide.SelenideElement;
 
@@ -15,12 +15,15 @@ public class OverviewCheckoutPage {
     public boolean checkBackpackTitle() {
         return backpackTitle.isDisplayed();
     }
+
     public String getFinalPrice() {
         return priceTotal.getText();
     }
+
     public String getBackpackPrice() {
         return backpackPrice.getText();
     }
+
     public void clickFinish() {
         finishButton
                 .shouldBe(enabled)

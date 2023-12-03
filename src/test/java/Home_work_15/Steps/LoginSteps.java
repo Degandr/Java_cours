@@ -1,6 +1,6 @@
 package Home_work_15.Steps;
 
-import Home_work_15.PageObject.LoginPage;
+import Home_work_15.PageObject.Pages.LoginPage;
 
 public class LoginSteps {
     public void login(String email, String password) {

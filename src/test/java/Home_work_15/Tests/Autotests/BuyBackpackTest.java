@@ -1,8 +1,9 @@
-package Home_work_15.Tests;
+package Home_work_15.Tests.Autotests;
 
 import Home_work_14.BaseTest;
-import Home_work_15.PageObject.*;
+import Home_work_15.PageObject.Pages.*;
 import Home_work_15.Steps.*;
+import Home_work_15.Tests.Credentials;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -48,6 +49,7 @@ public class BuyBackpackTest extends BaseTest {
         completeCheckoutPage.checkCartBadgeIsNotVisible();
         completeCheckoutPage.clickBackHome();
     }
+
     @Test
     public void buyBackpackSteps() {
         LoginSteps loginSteps = new LoginSteps();

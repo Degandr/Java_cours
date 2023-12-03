@@ -1,10 +1,11 @@
 package Home_work_15.Steps;
 
-import Home_work_15.PageObject.OverviewCheckoutPage;
+import Home_work_15.PageObject.Pages.OverviewCheckoutPage;
 
 public class OverviewCheckoutPriceSteps {
     private String backpackPrice;
     private String finalPrice;
+
     public boolean overviewCheckoutBackpackItemPrice() {
         OverviewCheckoutPage overviewCheckoutPage = new OverviewCheckoutPage();
         backpackPrice = overviewCheckoutPage.getBackpackPrice();

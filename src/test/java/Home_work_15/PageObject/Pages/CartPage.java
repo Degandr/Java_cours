@@ -1,4 +1,4 @@
-package Home_work_15.PageObject;
+package Home_work_15.PageObject.Pages;
 
 import com.codeborne.selenide.SelenideElement;
 
@@ -45,9 +45,11 @@ public class CartPage {
                 .shouldBe(enabled)
                 .click();
     }
+
     public boolean checkBikeLightTitleIsNotVisible() {
         return bikeLightTitle.is(not(visible));
     }
+
     public boolean checkCartBadgeIsNotVisible() {
         return cartBadge.is(not(visible));
     }
