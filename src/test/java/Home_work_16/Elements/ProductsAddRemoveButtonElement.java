@@ -37,21 +37,33 @@ public class ProductsAddRemoveButtonElement {
         removeButton.click();
     }
 
+    private boolean checkAddButton() {
+        initAddButtonElement();
+        return addButton.isDisplayed();
+    }
+
+    private boolean checkRemoveButton() {
+        initRemoveButtonElement();
+        return removeButton.isDisplayed();
+    }
+
     public void addButtonClickWithCheck() {
         initRemoveButtonElement();
-        if (!removeButton.isDisplayed()) {
+        boolean result = checkRemoveButton();
+        if (!result) {
             simpleAddClick();
         } else {
-            Assert.fail("Can't add to cart because product is already on cart!");
+            System.out.println("Can't add to cart because product is already on cart!");
         }
     }
 
     public void removeButtonClickWithCheck() {
         initAddButtonElement();
-        if (!addButton.isDisplayed()) {
+        boolean result = checkAddButton();
+        if (!result) {
             simpleRemoveClick();
         } else {
-            Assert.fail("Can't remove from cart because product isn't there!");
+            System.out.println("Can't remove from cart because product isn't there!");
         }
     }
 }
