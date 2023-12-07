@@ -17,7 +17,7 @@ public class PriceSortingTest extends BaseTest {
     private ArrayList<String> arrayPriceHighToLow;
 
     @Test
-    public void priceSortingPageObject() {
+    public void priceSortingPageObjectTest() {
         LoginPage loginPage = new LoginPage();
         loginPage.openPage();
         loginPage.fillLogin(Credentials.USER_LOGIN);
@@ -37,7 +37,7 @@ public class PriceSortingTest extends BaseTest {
     }
 
     @Test
-    public void priceSortingSteps() {
+    public void priceSortingStepsTest() {
         LoginSteps loginSteps = new LoginSteps();
         loginSteps.login(Credentials.USER_LOGIN, Credentials.USER_PASSWORD);
         ProductsSteps productsSteps = new ProductsSteps();

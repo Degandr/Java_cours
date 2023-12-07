@@ -7,6 +7,7 @@ import com.codeborne.selenide.SelenideElement;
 import static com.codeborne.selenide.Condition.enabled;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.open;
 
 public class LoginPage {
     private SelenideElement emailField = $("[id='user-name']");
@@ -15,7 +16,7 @@ public class LoginPage {
     private SelenideElement boxWithCredentials = $("[class='login_credentials_wrap-inner']");
 
     public void openPage() {
-        Selenide.open(StartPageUrl.SITE_URL);
+        open(StartPageUrl.SITE_URL);
     }
 
     public void fillLogin(String email) {

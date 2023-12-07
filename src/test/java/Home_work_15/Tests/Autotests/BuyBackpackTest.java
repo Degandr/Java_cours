@@ -17,7 +17,7 @@ public class BuyBackpackTest extends BaseTest {
     private final String POSTAL_CODE = "12345";
 
     @Test
-    public void buyBackpackPageObject() {
+    public void buyBackpackPageObjectTest() {
         LoginPage loginPage = new LoginPage();
         loginPage.openPage();
         loginPage.fillLogin(Credentials.USER_LOGIN);
@@ -51,7 +51,7 @@ public class BuyBackpackTest extends BaseTest {
     }
 
     @Test
-    public void buyBackpackSteps() {
+    public void buyBackpackStepsTest() {
         LoginSteps loginSteps = new LoginSteps();
         loginSteps.login(Credentials.USER_LOGIN, Credentials.USER_PASSWORD);
         ProductsSteps productsSteps = new ProductsSteps();

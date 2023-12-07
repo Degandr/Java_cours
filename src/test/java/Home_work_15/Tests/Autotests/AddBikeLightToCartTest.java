@@ -16,7 +16,7 @@ public class AddBikeLightToCartTest extends BaseTest {
     private final String BIKE_LIGHT_TITLE = "Sauce Labs Bike Light";
 
     @Test
-    public void addBikeLightToCartPageObject() {
+    public void addBikeLightToCartPageObjectTest() {
         LoginPage loginPage = new LoginPage();
         loginPage.openPage();
         loginPage.fillLogin(Credentials.USER_LOGIN);
@@ -34,7 +34,7 @@ public class AddBikeLightToCartTest extends BaseTest {
     }
 
     @Test
-    public void addBikeLightToCartSteps() {
+    public void addBikeLightToCartStepsTest() {
         LoginSteps loginSteps = new LoginSteps();
         loginSteps.login(Credentials.USER_LOGIN, Credentials.USER_PASSWORD);
         ProductsSteps productsSteps = new ProductsSteps();

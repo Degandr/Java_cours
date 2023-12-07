@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 public class LogoutTest extends BaseTest {
     @Test
-    public void logoutPageObject() {
+    public void logoutPageObjectTest() {
         LoginPage loginPage = new LoginPage();
         loginPage.openPage();
         loginPage.fillLogin(Credentials.USER_LOGIN);
@@ -23,7 +23,7 @@ public class LogoutTest extends BaseTest {
     }
 
     @Test
-    public void logoutSteps() {
+    public void logoutStepsTest() {
         LoginSteps loginSteps = new LoginSteps();
         loginSteps.login(Credentials.USER_LOGIN, Credentials.USER_PASSWORD);
         ProductsSteps productsSteps = new ProductsSteps();

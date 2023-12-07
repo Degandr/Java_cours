@@ -14,7 +14,7 @@ public class RemoveBikeLightFromCartTest extends BaseTest {
     private final String CART_BADGE_NUMBER = "1";
 
     @Test
-    public void removeBikeLightFromCartPageObject() {
+    public void removeBikeLightFromCartPageObjectTest() {
         LoginPage loginPage = new LoginPage();
         loginPage.openPage();
         loginPage.fillLogin(Credentials.USER_LOGIN);
@@ -32,7 +32,7 @@ public class RemoveBikeLightFromCartTest extends BaseTest {
     }
 
     @Test
-    public void removeBikeLightFromCartSteps() {
+    public void removeBikeLightFromCartStepsTest() {
         LoginSteps loginSteps = new LoginSteps();
         loginSteps.login(Credentials.USER_LOGIN, Credentials.USER_PASSWORD);
         ProductsSteps productsSteps = new ProductsSteps();
