@@ -1,6 +1,7 @@
 package Home_works_17.dataGenerate;
 
 import lombok.Getter;
+
 @Getter
 public class DataStaticGenerate {
     private String standartUser = "standard_user";

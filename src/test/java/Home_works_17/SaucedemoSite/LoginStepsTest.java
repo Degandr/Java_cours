@@ -6,11 +6,13 @@ import org.testng.annotations.Test;
 
 public class LoginStepsTest {
     LoginPageObject page = new LoginPageObject();
+
     private void fillInLoginPage(SaucedemoModel model) {
         page.openPage();
         page.fillLogin(model.getUsername());
         page.fillPassword(model.getPassword());
     }
+
     @Test
     public void execute() {
         fillInLoginPage(PrepareRegistrationData.fakerPreparation());
