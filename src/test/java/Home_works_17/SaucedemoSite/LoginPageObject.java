@@ -10,9 +10,7 @@ public class LoginPageObject {
     private SelenideElement emailField = $("[id='user-name']");
     private SelenideElement passwordField = $("[id='password']");
 
-    private String url = "https://www.saucedemo.com/";
-
-    public void openPage() {
+    public void openPage(String url) {
         open(url);
     }
 

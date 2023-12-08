@@ -8,7 +8,7 @@ public class LoginStepsTest {
     LoginPageObject page = new LoginPageObject();
 
     private void fillInLoginPage(SaucedemoModel model) {
-        page.openPage();
+        page.openPage(model.getUrl());
         page.fillLogin(model.getUsername());
         page.fillPassword(model.getPassword());
     }

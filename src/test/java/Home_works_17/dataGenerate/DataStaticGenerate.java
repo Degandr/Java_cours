@@ -11,4 +11,5 @@ public class DataStaticGenerate {
     private String errorUser = "error_user";
     private String visualUser = "visual_user";
     private String password = "secret_sauce";
+    private String url = "https://www.saucedemo.com/";
 }
