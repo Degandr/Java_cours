@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Swag Labs Test">
     <listeners>
-        <listener class-name="Home_work_19.Tests.Utils.AnnotationTransformer"/>
+        <listener class-name="Home_work_20.Tests.Utils.AnnotationTransformer"/>
     </listeners>
     <test name="Add Bike Light To Cart Test">
         <classes>
-            <class name="Home_work_19.Tests.Autotests.AddBikeLightToCartTest"/>
+            <class name="Home_work_20.Tests.Autotests.AddBikeLightToCartTest"/>
         </classes>
     </test>
     <test name="Buy Backpack Test">
         <classes>
-            <class name="Home_work_19.Tests.Autotests.BuyBackpackTest"/>
+            <class name="Home_work_20.Tests.Autotests.BuyBackpackTest"/>
         </classes>
     </test>
     <test name="Logout Test">
         <classes>
-            <class name="Home_work_19.Tests.Autotests.LogoutTest"/>
+            <class name="Home_work_20.Tests.Autotests.LogoutTest"/>
         </classes>
     </test>
     <test name="Price Sorting Test">
         <classes>
-            <class name="Home_work_19.Tests.Autotests.PriceSortingTest"/>
+            <class name="Home_work_20.Tests.Autotests.PriceSortingTest"/>
         </classes>
     </test>
     <test name="Remove Bike Light From Cart Test">
         <classes>
-            <class name="Home_work_19.Tests.Autotests.RemoveBikeLightFromCartTest"/>
+            <class name="Home_work_20.Tests.Autotests.RemoveBikeLightFromCartTest"/>
         </classes>
     </test>
 </suite>
