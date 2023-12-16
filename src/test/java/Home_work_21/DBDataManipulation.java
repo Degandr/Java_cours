@@ -23,10 +23,11 @@ public class DBDataManipulation extends DBConnection {
             preparedStatement.executeUpdate();
         }
     }
+
     @SneakyThrows
     public static void removeLastAddedRecord() {
         String getLastIdQuery = "SELECT id FROM test.names ORDER BY id DESC LIMIT 1";
-        ResultSet resultSet  = statement.executeQuery(getLastIdQuery);
+        ResultSet resultSet = statement.executeQuery(getLastIdQuery);
         if (resultSet.next()) {
             int lastId = resultSet.getInt(1);
             PreparedStatement preparedStatement = connect
@@ -50,7 +51,7 @@ public class DBDataManipulation extends DBConnection {
                     .build();
             testTable.add(testModel);
         }
-        for (TestTableModel testModel: testTable){
+        for (TestTableModel testModel : testTable) {
             System.out.println(testModel.toString());
         }
         closeConnection();

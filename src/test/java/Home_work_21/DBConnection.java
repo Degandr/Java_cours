@@ -14,7 +14,7 @@ public class DBConnection {
         try {
             connect = DriverManager
                     .getConnection("jdbc:mysql://localhost/test?"
-                    + "user=root&password=admin");
+                            + "user=root&password=admin");
             statement = connect.createStatement();
         } catch (SQLException e) {
             e.printStackTrace();
