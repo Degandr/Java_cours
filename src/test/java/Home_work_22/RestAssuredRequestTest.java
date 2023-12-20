@@ -3,13 +3,20 @@ package Home_work_22;
 import Home_work_22.Generator.DataGenerator;
 import Home_work_22.Models.PostPutPatchMethodsModel;
 import Home_work_22.Models.RegisterLoginActionsModel;
+import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 
 public class RestAssuredRequestTest {
     private final String BASE_URL = "https://reqres.in";
+
+    @BeforeTest
+    public void loggingSetUp() {
+        RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+    }
 
     @Test
     public void ListUsersTest() {
